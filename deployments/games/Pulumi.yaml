@@ -1,0 +1,9 @@
+name: pulumi-boardgame-assistant-games
+description: DynamoDB table and seeding for supported board games
+runtime: go
+main: .
+config:
+  pulumi:tags:
+    value:
+      module: games
+      project: boardgame-assistant 

@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    name: Lint & Format
+    uses: PhilNel/shared-go-workflows/.github/workflows/lint.yml@main
