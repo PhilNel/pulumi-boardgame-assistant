@@ -1,0 +1,9 @@
+name: pulumi-boardgame-assistant-references
+description: DynamoDB table and seeding for board game references
+runtime: go
+main: .
+config:
+  pulumi:tags:
+    value:
+      module: references
+      project: boardgame-assistant 

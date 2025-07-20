@@ -24,7 +24,7 @@ func NewGameSeeder(cfg *config.DynamoDB) *GameSeeder {
 }
 
 func (gs *GameSeeder) CreateGameResources(ctx *pulumi.Context, table *dynamodb.Table) error {
-	games := models.GetSampleGames()
+	games := models.GetGames()
 
 	for _, game := range games {
 		if err := game.Validate(); err != nil {

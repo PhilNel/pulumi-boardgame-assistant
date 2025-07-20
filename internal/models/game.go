@@ -32,7 +32,7 @@ func (g *Game) Validate() error {
 	return nil
 }
 
-func GetSampleGames() []Game {
+func GetGames() []Game {
 	return []Game{
 		{
 			GameId:    "nemesis",
